@@ -1,0 +1,43 @@
+# This file defines the dbt project configuration.
+
+name: 'pharma_cmc_quality'
+version: '1.0.0'
+config-version: 2
+
+# This is the name of the profile dbt will look for in your profiles.yml file
+profile: 'pharma_cmc_quality_profile'
+
+# These configurations apply to all models in the project.
+# You can override them in specific models.
+models:
+  pharma_cmc_quality:
+    # Applies to all models in the project
+    +materialized: table
+    staging:
+      # Applies to all models in the staging directory
+      +materialized: view
+      +schema: pqcmc_staging
+      +tags: "staging"
+    intermediate:
+      # Applies to all models in the intermediate directory
+      +materialized: table
+      +schema: pqcmc_intermediate
+      +tags: "intermediate"
+    marts:
+      # Applies to all models in the marts directory
+      +materialized: table
+      +schema: pqcmc_analytics
+      +tags: "marts"
+
+# Define where dbt should look for different types of files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory for compiled artifacts
+clean-targets:         # directories removed by `dbt clean`
+  - "target"
+  - "dbt_packages"

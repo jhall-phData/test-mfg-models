@@ -1,0 +1,32 @@
+# ------------------------------------------------------------------
+# models/sources.yml
+# ------------------------------------------------------------------
+# This file defines the sources from the raw data schema.
+version: 2
+
+sources:
+  - name: raw_quality_system
+    description: "Source database for the pharmaceutical quality system."
+    database: JHALL_SANDBOX # Replace with your raw database name
+    schema: PQCMC_RAW # Replace with your raw schema name
+    tables:
+      - name: materials
+        description: "Raw materials and APIs."
+      - name: products
+        description: "Finished drug products."
+      - name: specifications
+        description: "Specifications for materials and products."
+      - name: tests
+        description: "Master list of analytical test procedures."
+      - name: specification_tests
+        description: "Joining table for specs and tests."
+      - name: lots
+        description: "Manufacturing lots/batches."
+      - name: test_results
+        description: "QC test results for lots."
+      - name: stability_studies
+        description: "Stability study protocols."
+      - name: stability_lots
+        description: "Lots included in stability studies."
+      - name: stability_results
+        description: "Stability test results."
