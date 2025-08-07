@@ -1,0 +1,13 @@
+*target
+*.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+*.orig
+*.class
+*.jar
+
+/pharma_cmc_quality/dbt_internal_packages/
+/pharma_cmc_quality/target
