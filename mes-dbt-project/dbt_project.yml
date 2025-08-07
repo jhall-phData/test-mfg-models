@@ -1,0 +1,26 @@
+name: mes_dbt_project
+version: 1.0.0
+
+config-version: 2
+
+profile: mes_dbt_project
+
+source-paths: ["models"]
+
+target-path: "target"
+
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  mes_dbt_project:
+    +materialized: view
+
+seeds:
+  mes_dbt_project:
+    +header: true
+
+tests:
+  mes_dbt_project:
+    +severity: error

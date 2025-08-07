@@ -1,0 +1,29 @@
+name: biopharma-mes-dbt
+version: 1.0.0
+profile: biopharma
+
+source-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+models:
+  biopharma:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      manufacturing:
+        +materialized: table
+      regulatory:
+        +materialized: table
+
+seeds:
+  +materialized: table
+
+macros:
+  +materialized: macro
+
+tests:
+  +materialized: test

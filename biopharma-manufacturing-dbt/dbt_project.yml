@@ -1,0 +1,25 @@
+name: biopharma-manufacturing-dbt
+
+version: '1.0'
+
+config-version: 2
+
+profile: biopharma-manufacturing-dbt
+
+source-paths: ["models"]
+
+macro-paths: ["macros"]
+
+target-path: "target"
+
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  staging:
+    materialized: view
+  intermediate:
+    materialized: view
+  marts:
+    materialized: table

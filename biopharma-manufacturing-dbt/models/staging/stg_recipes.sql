@@ -1,0 +1,12 @@
+SELECT
+    recipe_id,
+    recipe_name,
+    version,
+    created_at,
+    updated_at,
+    ingredients,
+    instructions,
+    batch_size,
+    production_time
+FROM
+    source_schema.recipes;

@@ -1,0 +1,11 @@
+equipment_id,equipment_name,equipment_type,manufacturer,model_number,serial_number,purchase_date,installation_date,maintenance_schedule
+1,Reactor A,Reactor,PharmaTech,RT-1000,SN123456,2020-01-15,2020-02-01,Monthly
+2,Separator B,Separator,Separation Inc,SP-2000,SN654321,2019-05-20,2019-06-15,Quarterly
+3,Filter C,Filter,FilterTech,FT-3000,SN789012,2021-03-10,2021-04-05,Monthly
+4,Pump D,Pump,Fluid Dynamics,PD-4000,SN345678,2022-07-25,2022-08-10,Monthly
+5,Chiller E,Chiller,CoolTech,CH-5000,SN987654,2021-11-30,2021-12-15,Quarterly
+6,Autoclave F,Autoclave,Sterilize Co,AC-6000,SN456789,2020-09-05,2020-10-01,Monthly
+7,Mixer G,Mixer,MixMaster,MX-7000,SN321654,2021-02-20,2021-03-15,Monthly
+8,Scale H,Scale,Precision Scales,SC-8000,SN159753,2022-05-10,2022-06-01,Monthly
+9,Conveyor I,Conveyor,ConveyAll,CV-9000,SN753159,2019-12-01,2020-01-01,Quarterly
+10,Storage Tank J,Tank,Tank Solutions,ST-10000,SN258369,2020-08-15,2020-09-01,Yearly

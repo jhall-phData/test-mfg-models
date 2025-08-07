@@ -1,0 +1,6 @@
+product_id,product_name,description,version,compliance_standard,active_ingredient,dosage_form,strength,packaging_type
+1,Product A,Description of Product A,1.0,ICH Q7A,Active Ingredient A,Tablet,500mg,Bottle
+2,Product B,Description of Product B,1.0,USP,Active Ingredient B,Capsule,250mg,Blister Pack
+3,Product C,Description of Product C,2.0,EMA,Active Ingredient C,Solution,100mg/mL,Vial
+4,Product D,Description of Product D,1.5,FDA,Active Ingredient D,Ointment,5%,Tube
+5,Product E,Description of Product E,1.0,ISO 13485,Active Ingredient E,Granule,1g,Box

@@ -1,0 +1,11 @@
+equipment_id,equipment_name,equipment_type,manufacturer,model_number,serial_number,purchase_date,installation_date,status
+1,Excavator,Heavy Equipment,Caterpillar,320D,ABC123,2020-01-15,2020-02-01,Active
+2,Conveyor Belt,Material Handling,Siemens,CB-200,XYZ456,2019-05-20,2019-06-10,Active
+3,Mixing Tank,Process Equipment,GE,MT-500,LMN789,2021-03-10,2021-04-01,Inactive
+4,Robotic Arm,Automation,KUKA,KR-16,DEF012,2022-07-25,2022-08-15,Active
+5,Packaging Machine,Packaging,ABB,PAC-300,GHI345,2020-11-05,2020-12-01,Active
+6,Quality Control Scanner,Inspection,Keyence,QCS-100,JKL678,2021-09-15,2021-10-05,Active
+7,Drilling Machine,Heavy Equipment,Hitachi,DM-400,MNO901,2018-04-12,2018-05-01,Inactive
+8,Heat Exchanger,Process Equipment,Alfa Laval,HE-200,PQR234,2019-08-30,2019-09-20,Active
+9,Storage Tank,Process Equipment,Emerson,ST-1000,STU567,2020-02-15,2020-03-01,Active
+10,Assembly Line,Automation,Fanuc,AL-500,VWX890,2021-06-20,2021-07-10,Active

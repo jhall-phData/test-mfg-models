@@ -1,0 +1,9 @@
+SELECT
+    site_id,
+    site_name,
+    location,
+    description,
+    created_at,
+    updated_at
+FROM
+    raw_data.site_data;

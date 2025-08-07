@@ -1,0 +1,9 @@
+SELECT
+    enterprise_id,
+    enterprise_name,
+    enterprise_location,
+    enterprise_type,
+    created_at,
+    updated_at
+FROM
+    raw.enterprise_data;

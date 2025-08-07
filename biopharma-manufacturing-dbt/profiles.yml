@@ -1,0 +1,24 @@
+version: 2
+
+profiles:
+  biopharma_manufacturing:
+    target: dev
+    outputs:
+      dev:
+        type: postgres
+        threads: 1
+        host: your_host
+        port: 5432
+        user: your_username
+        pass: your_password
+        dbname: your_database
+        schema: your_schema
+      prod:
+        type: postgres
+        threads: 1
+        host: your_host
+        port: 5432
+        user: your_username
+        pass: your_password
+        dbname: your_database
+        schema: your_schema

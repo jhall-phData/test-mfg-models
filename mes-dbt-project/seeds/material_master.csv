@@ -1,0 +1,11 @@
+material_id,material_name,material_type,supplier_id,unit_of_measure,standard_cost
+1,Steel,Raw Material,101,kg,500
+2,Plastic,Raw Material,102,kg,300
+3,Aluminum,Raw Material,103,kg,700
+4,Copper,Raw Material,104,kg,800
+5,Resin,Raw Material,105,kg,450
+6,Paint,Raw Material,106,l,150
+7,Oil,Raw Material,107,l,200
+8,Glass,Raw Material,108,kg,600
+9,Chemical A,Raw Material,109,l,350
+10,Chemical B,Raw Material,110,l,400

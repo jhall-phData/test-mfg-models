@@ -1,0 +1,12 @@
+SELECT
+    equipment_id,
+    equipment_name,
+    equipment_type,
+    operational_status,
+    specifications,
+    last_maintenance_date,
+    next_maintenance_due,
+    created_at,
+    updated_at
+FROM
+    raw.equipment_data;
