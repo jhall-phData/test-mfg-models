@@ -1,0 +1,11 @@
+material_id,material_name,specification_type,specification_value,unit,compliance_standard
+M001,Active Pharmaceutical Ingredient,Assay,98.5,%,USP
+M002,Excipient,Moisture Content,5.0,%,ICH Q3C
+M003,Packaging Material,Thickness,0.5,mm,ASTM D698
+M004,Active Pharmaceutical Ingredient,Impurity Limit,0.1,%,ICH Q3A
+M005,Excipient,Particle Size,100,µm,USP
+M006,Packaging Material,Sealing Strength,5,N,ASTM F88
+M007,Active Pharmaceutical Ingredient,Solubility,100,mL,USP
+M008,Excipient,Microbial Limits,100,cfu/g,USP
+M009,Packaging Material,Barrier Properties,0.1,cm³/m²/day,ASTM F1249
+M010,Active Pharmaceutical Ingredient,Stability,24 months,months,ICH Q1A

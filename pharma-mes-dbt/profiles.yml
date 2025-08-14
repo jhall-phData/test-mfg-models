@@ -1,0 +1,22 @@
+database:
+  my_database:
+    target: dev
+    outputs:
+      dev:
+        type: postgres
+        threads: 1
+        host: localhost
+        port: 5432
+        user: your_username
+        pass: your_password
+        dbname: your_database_name
+        schema: public
+      prod:
+        type: postgres
+        threads: 1
+        host: production_host
+        port: 5432
+        user: your_username
+        pass: your_password
+        dbname: your_production_database_name
+        schema: public

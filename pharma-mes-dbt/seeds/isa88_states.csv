@@ -1,0 +1,8 @@
+state_name,state_description
+"Idle","The state when the equipment is not in operation."
+"Running","The state when the equipment is actively processing."
+"Paused","The state when the equipment is temporarily halted."
+"Stopped","The state when the equipment is completely shut down."
+"Fault","The state when the equipment has encountered an error or malfunction."
+"Maintenance","The state when the equipment is undergoing maintenance or repairs."
+"Ready","The state when the equipment is prepared to start processing."

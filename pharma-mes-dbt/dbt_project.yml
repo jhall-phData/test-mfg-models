@@ -1,0 +1,29 @@
+name: pharma_mes_dbt
+version: 1.0.0
+
+config-version: 2
+
+profile: pharma_mes_dbt
+
+source-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+models:
+  +materialized: view
+  staging:
+    +enabled: true
+  intermediate:
+    +enabled: true
+  marts:
+    +enabled: true
+
+seeds:
+  +quote_columns: false
+
+macros:
+  +enabled: true
+
+tests:
+  +enabled: true
