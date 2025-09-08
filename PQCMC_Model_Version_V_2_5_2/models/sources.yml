@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: pq_cmc_raw
+    description: "Raw source data simulating operational systems for PQ/CMC."
+    tables:
+      - name: raw_drug_products
+        description: "Source table for finished drug products."
+      - name: raw_drug_substances
+        description: "Source table for active pharmaceutical ingredients (APIs)."
+      - name: raw_product_substances
+        description: "Linking table between products and substances."
+      - name: raw_quality_specifications
+        description: "Source table for quality specification master data."
+      - name: raw_specification_tests
+        description: "Source table for individual tests within a specification."
+      - name: raw_batches
+        description: "Source table for transactional batch/lot data."
+      - name: raw_batch_analysis
+        description: "Source table for analysis performed on batch samples."
+      - name: raw_test_results
+        description: "Source table for individual quality test results."
+      - name: raw_manufacturing_sites
+        description: "Source table for manufacturing facilities."
+
+models:
+  - name: mart_batch_quality
+    description: "A unified, denormalized model showing batch execution data alongside its quality test results and the specifications it was tested against. This is the primary table for analytics."
+    columns:
+      - name: batch_id
+        description: "The unique identifier for the manufacturing batch/lot."
+        tests:
+          - unique
+          - not_null
+      - name: test_result_id
+        description: "The unique identifier for a specific test result."
+        tests:
+          - unique

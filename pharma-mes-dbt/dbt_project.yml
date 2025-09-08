@@ -1,11 +1,10 @@
 name: pharma_mes_dbt
 version: 1.0.0
-
 config-version: 2
 
-profile: pharma_mes_dbt
+profile: pharma_mes_dbt_profile
 
-source-paths: ["models"]
+# source-paths: ["models"]
 macro-paths: ["macros"]
 seed-paths: ["seeds"]
 test-paths: ["tests"]
@@ -22,8 +21,8 @@ models:
 seeds:
   +quote_columns: false
 
-macros:
-  +enabled: true
+# macros:
+#   +enabled: true
 
 tests:
   +enabled: true

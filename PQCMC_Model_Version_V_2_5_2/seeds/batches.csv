@@ -1,0 +1,4 @@
+batch_or_lot_number,product_id,manufacturing_site_id,manufacturing_date,batch_size
+LOT-A-001,PROD-001,SITE-A,2024-08-15,1000
+LOT-A-002,PROD-001,SITE-A,2024-08-16,1000
+LOT-B-001,PROD-002,SITE-B,2024-08-20,5000

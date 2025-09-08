@@ -1,0 +1,5 @@
+spec_test_id,spec_id,test_name,acceptance_criteria
+SPECTEST-01,SPEC-ASP-01,Assay,"95.0% - 105.0%"
+SPECTEST-02,SPEC-ASP-01,Dissolution,"_>80% in 30 mins"
+SPECTEST-03,SPEC-IBU-01,Assay,"98.0% - 102.0%"
+SPECTEST-04,SPEC-IBU-01,Purity,"<0.1% impurities"

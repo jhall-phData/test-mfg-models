@@ -1,3 +1,4 @@
+-- funcsign: (strategy, optional[string], string) -> string
 {% macro dbt_snowflake_get_tmp_relation_type(strategy, unique_key, language) %}
 {%- set tmp_relation_type = config.get('tmp_relation_type') -%}
   /* {#
@@ -153,7 +154,7 @@
   {% set target_relation = target_relation.incorporate(type='table') %}
 
   {% set should_revoke =
-   should_revoke(existing_relation.is_table, full_refresh_mode) %}
+   should_revoke(existing_relation.is_table, full_refresh_mode) %} -- noqa: existing_relation can be none
   {% do apply_grants(target_relation, grant_config, should_revoke=should_revoke) %}
 
   {% do persist_docs(target_relation, model) %}
